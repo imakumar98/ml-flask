@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Image Captioner</title>
 
-	<!--Import CSS File-->
-	<link rel="stylesheet" type="text/css" href="/static/style.css"/>
-</head>
-<body>
-	
-</body>
+		<!--Import CSS File-->
+		<link rel="stylesheet" type="text/css" href="/static/style.css"/>
+	</head>
+	<body>
+		<header>
+
+		</header>
+
+		<div class="image-uplaod-form">
+			<form id="upload_form" enctype="multipart/form-data" method="post">
+				<input type="file" name="image" id="file1" onchange="uploadFile()"><br>
+				<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+				<h3 id="status"></h3>
+				<p id="loaded_n_total"></p>
+			  </form>
+		</div>
+
+		<footer>
+
+		</footer>
+		<script src="/static/main.js"></script>
+	</body>
 </html>
